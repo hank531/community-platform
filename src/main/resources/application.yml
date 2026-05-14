@@ -4,6 +4,10 @@ spring:
     username: admin
     password: password123
     driver-class-name: org.postgresql.Driver
+  servlet:
+    multipart:
+      max-file-size: 10MB       # 파일 하나당 최대 크기
+      max-request-size: 100MB   # 한 번 요청의 전체 최대 크기
 
   jpa:
     hibernate:
@@ -42,3 +46,9 @@ logging:
   level:
     org.hibernate.SQL: DEBUG
     com.community: DEBUG
+
+minio:
+  endpoint: http://localhost:9000   # MinIO API 주소
+  access-key: minioadmin
+  secret-key: minioadmin
+  bucket: community                 # 위에서 만든 버킷 이름

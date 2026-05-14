@@ -37,6 +37,9 @@ bin/
 ### VS Code ###
 .vscode/
 
+### 클로드코드 ###
+.claude/worktrees/
+
 # 컴파일된 파일
 *.class
 *.jar

@@ -48,8 +48,11 @@ dependencies {
 	// ── Swagger ────────────────────────────────────────────
 	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.6.0'
 
-	// ── AWS S3 ─────────────────────────────────────────────
-	implementation 'software.amazon.awssdk:s3:2.25.23'
+	// ── MinIO Java Client ──────────────────────────────────
+	implementation 'io.minio:minio:8.5.9'
+
+	// ── OkHttp (MinIO 의존성) ───────────────────────────────
+	implementation 'com.squareup.okhttp3:okhttp:4.12.0'
 
 	// ── 썸네일 생성 ─────────────────────────────────────────
 	implementation 'net.coobird:thumbnailator:0.4.20'
